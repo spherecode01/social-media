@@ -57,7 +57,7 @@ app.use("/posts", postRoutes);
 
 //Moongose Setup
 const PORT = process.env.PORT || 6001;
-
+console.log(process.env.MONGO_URL, "mongo data")
 mongoose.connect(process.env.MONGO_URL, {
 }).then(() => {
     console.log('Connected to MongoDB');
