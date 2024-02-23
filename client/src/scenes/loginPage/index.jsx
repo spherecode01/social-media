@@ -29,6 +29,27 @@ const LoginPage = () => {
         </Typography>
         <Form /> 
       </Box>
+      <Box
+       position="fixed"
+       bottom="12rem"
+       right="16rem"
+       border={1}
+       borderColor="black"
+       borderRadius="1rem"
+       p="0.5rem"
+       textAlign="center"
+       width="150px" 
+       boxShadow="0px  0px  10px rgba(0,  0,  0,  0.2)">
+        <Typography variant="body1">
+          Credentials:
+        </Typography>
+        <Typography variant="body2">
+          Email: test@gmail.com
+        </Typography>
+        <Typography variant="body2">
+          Password:  12345
+        </Typography>
+      </Box>
     </Box>
   );
 };

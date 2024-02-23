@@ -242,7 +242,7 @@ const registerSchema = yup.object().shape({
                 p: "1rem",
                 backgroundColor: palette.primary.main,
                 color: palette.background.alt,
-                "&:hover": { color: palette.primary.main },
+                "&:hover": { backgroundColor: palette.primary.main, },
               }}
             >
               {isLogin ? "LOGIN" : "REGISTER"}
@@ -255,10 +255,10 @@ const registerSchema = yup.object().shape({
               sx={{
                 textDecoration: "underline",
                 color: palette.primary.main,
-                "&:hover": {
-                  cursor: "pointer",
-                  color: palette.primary.light,
-                },
+                //"&:hover": {
+                 // cursor: "pointer",
+                 // color: palette.primary.light,
+                //},
               }}
             >
               {isLogin
